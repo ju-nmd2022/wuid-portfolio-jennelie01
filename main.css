@@ -1,3 +1,5 @@
+/* general background and text attributes */
+
 body{
     background-color: rgb(0, 0, 0);
 }
@@ -17,6 +19,7 @@ p{
   color: rgb(255, 255, 255);
 }
 
+/* hobbies subtitle for list */
 .hobbies{
     margin-left: 22rem;
     font-weight: bold;
@@ -36,11 +39,12 @@ li{
     color: rgb(255, 255, 255);
 }
 
+/* my works and jönköping tab */
 h1, h2{
     display: inline;
 }
 
-h2{
+h2{  
     text-align: right;
     text-decoration: underline;
     font-family:"Arial";
@@ -57,6 +61,7 @@ h2{
     font-family:"Arial";
     font-size:medium;
     color: white;
+  
 
 }
 
@@ -85,18 +90,12 @@ h2{
 
 }
 
-.activities{
-font-weight: bold;
-}
 
-.restaurants{
+.subtitles{
     font-weight: bold;
-
 }
-.goingout{
-    font-weight: bold;
 
-}
+
 
 .cityimg{
     max-width: 30rem;
@@ -111,6 +110,7 @@ font-weight: bold;
     border-radius: 10px;
 }
 
+/* my works page with grid */
 .works {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -122,34 +122,47 @@ font-weight: bold;
 
   }
 
+ 
+
+  @media screen and (max-width:200px){
+    .works{
+        grid-template-columns: repeat(1fr);
+    }
+    
+  }
+
+  /* different my works images */
   .photoshopassignment {
    
-    width: 200px;
+    height: 200px;
     border-radius: 10px;
 
   }
 
-.illustratorassignment{
-    width: 200px;
+.illustratorassignment{ 
+    height: 200px;
     border-radius: 10px;
 
 }
 
-.brandingassignment{
-    width: 200px;
+ .brandingassignment{ 
+    height: 200px;
     border-radius: 10px;
 }
 
-.figmaassignment{
-    width: 200px;
+.figmaassignment{ 
+    height: 210px;
     border-radius: 10px;
 }
 
-.project1{
-    width: 200px;
+.juniperimg{
+    height: 300px;
+    border-radius: 10px;
 
 }
 
+
+/* link for figma project to detail page */
 .figmalink:hover{
     color: rgb(97, 0, 187)
 }
@@ -159,6 +172,9 @@ font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
+/* detail page about figma project */
 .figmaassignment2{
     width: 300px;
     margin-left:30rem;
@@ -172,6 +188,8 @@ font-weight: bold;
     margin-left:50rem;
     margin-top: -100rem;
 }
+
+
 
 .figmaassignment2:hover{
     border: 2px solid rgb(97, 0, 187)
