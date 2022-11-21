@@ -29,15 +29,11 @@ p{
     max-width: 20rem;
     margin-top: -2rem;
     border-radius: 10px;
+    animation-name: floatingimage;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     
-}
-
-.purpleimg{
-  animation-name: floatingimage;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  
 }
 
 @keyframes floatingimage {
