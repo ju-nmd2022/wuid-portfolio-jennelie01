@@ -43,7 +43,7 @@ p{
 /* source for floating: https://www.geeksforgeeks.org/css-floating-animation/ */
 
 
-li{
+.hobbieslist{
     margin-left: 22rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(255, 255, 255);
@@ -54,19 +54,19 @@ li{
 nav ul li{
   display: inline-block;
   list-style-type: none;
+  padding: 10px 50px;
+
+
 }
 
 
 #navigationbar{
   background-color: white;
+  text-align: center;
   
 }
 
-h2{    
-    text-decoration: underline;
-    font-family:"Arial";
-    color: black;
-}
+
 
 
 
@@ -75,10 +75,15 @@ h2{
     font-family:"Arial";
     font-size:medium;
     color: black;
-    box-shadow: inset 0 0 0 0 rgb(97, 0, 187);
+    animation-name: morejonkopinglink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    box-shadow: inset 0 0 0 0 rgb(97, 0, 187); 
     margin: 0 -.25rem;
     padding: 0 .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out; 
   
 
 }
@@ -94,6 +99,11 @@ h2{
     font-family:"Arial";
     font-size:medium;
     color: black;
+    animation-name: portfoliolink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
     box-shadow: inset 0 0 0 0 rgb(97, 0, 187);
     margin: 0 -.25rem;
     padding: 0 .25rem;
@@ -104,24 +114,36 @@ h2{
   .portfoliolink:hover {
     box-shadow: inset 100px 0 0 0 rgb(97, 0, 187);
     color: white;
-    animation-name: myworklink;
-
     
   }
 
-  /* source https://css-tricks.com/css-link-hover-effects/ */
 
-  @keyframes myworklink {  
+
+  /* source for box shadow https://css-tricks.com/css-link-hover-effects/ */
+
+  @keyframes morejonkopinglink  {  
     0% {     
-      color: pink;   
+      color:rgb(35, 1, 61);   
     }   
     50% {     
-      color: yellow;   
+      color: rgb(196, 117, 248);   
     } 
     100% {
-      color: blue;
+      color: rgb(35, 1, 61);
      }
   }
+  @keyframes portfoliolink  {  
+    0% {     
+      color:rgb(35, 1, 61);   
+    }   
+    50% {     
+      color: rgb(196, 117, 248);   
+    } 
+    100% {
+      color: rgb(35, 1, 61);
+     }
+  }
+
 
 .gobacklink{
     float:right;
@@ -182,32 +204,11 @@ h2{
 
 
   /* different my works images */
-  .photoshopassignment {
-    height: 200px;
-    border-radius: 10px;
 
-  }
 
-.stylizationassignment{ 
-    height: 200px;
-    border-radius: 10px;
-
-}
-
- .brandingassignment{ 
-    height: 200px;
-    border-radius: 10px;
-}
-
-.figmaassignment{ 
-    height: 200px;
-    border-radius: 10px;
-}
-
-.juniperimg{
-    height: 200px;
-    border-radius: 10px;
-
+.projects img{
+  height:200px;
+  border-radius: 10px;
 }
 
 
